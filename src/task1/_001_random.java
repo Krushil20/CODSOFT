@@ -2,7 +2,7 @@ package task1;
 
 import java.util.Random;
 
-public class random {
+public class _001_random {
     public static void main(String[] args) {
         // create instance of Random class
         Random rand = new Random();

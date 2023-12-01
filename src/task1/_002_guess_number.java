@@ -3,10 +3,9 @@ package task1;
 import java.util.Random;
 import java.util.Scanner;
 
-public class guess_number {
+public class _002_guess_number {
     public static void main(String[] args)
     {
-
         // stores actual and guess number
         int answer, guess;
 
@@ -34,25 +33,15 @@ public class guess_number {
             guess = in.nextInt();
 
             // if guess is greater than actual
-            if (guess > answer) {
-                System.out.println("Too high, try again");
+            if (guess == answer) {
+                System.out.println("Yes, you guessed the number.");
+                correct = true;
             }
-
-            // if guess is less than actual
-            else if (guess < answer) {
-                System.out.println("Too low, try again");
-            }
-
-            // guess is equal to actual value
             else {
-
-                System.out.println(
-                        "Yes, you guessed the number.");
-
+                System.out.println("False");
                 correct = true;
             }
         }
         System.exit(0);
     }
-
 }
